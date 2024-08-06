@@ -57,8 +57,8 @@ export const LoginForm = () => {
     <Box
       display={"flex"}
       bgcolor={"lightblue"}
-      width={"100%"}
-      height={"88%"}
+      width={"inherit"}
+      height={"inherit"}
       justifyContent={"center"}
       alignItems={"center"}
     >

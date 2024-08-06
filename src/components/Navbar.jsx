@@ -28,7 +28,7 @@ export const Navbar = () => {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container>
         <Toolbar disableGutters>
           {/* // MD SIZE LOGO */}
           <Typography

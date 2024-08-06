@@ -12,8 +12,8 @@ export const WelcomePage = () => {
       display={"flex"}
       flexDirection={"column"}
       justifyContent={"center"}
-      width={"100%"}
-      height={"88%"}
+      width={"inherit"}
+      height={"inherit"}
     >
       <Box flex={10}>
         <Typography variant="h3" textAlign={"center"}>

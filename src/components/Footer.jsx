@@ -9,7 +9,6 @@ export const Footer = () => {
         display="flex"
         position={"static"}
         bottom={0}
-        height={"25px"}
         bgcolor={"#1976d2"}
         justifyContent={"right"}
         px={"20px"}

@@ -13,6 +13,7 @@ const App = () => {
   //RETURN
   return (
     <MainProvider>
+      <Box display={'flex'} flexDirection={'column'} height={'100vh'}>
       <Navbar />
 
       <Routes>
@@ -27,6 +28,8 @@ const App = () => {
       </Routes>
 
       <Footer />
+
+      </Box>
     </MainProvider>
   );
 };
