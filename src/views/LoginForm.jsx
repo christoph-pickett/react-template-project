@@ -10,9 +10,12 @@ import {
 } from "@mui/material";
 import { FormControl, FormControlLabel } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { useMainContext } from "../store/mainStore";
 
 export const LoginForm = () => {
   // states
+  const { handleUpdateUser } = useMainContext();
   const navigateTo = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -41,7 +44,29 @@ export const LoginForm = () => {
   };
 
   const handleSubmit = () => {
-    setHasSubmit(true);
+    // API CALL
+    
+    
+
+    axios
+      .post("http://localhost:8000/user-auth", { email, password })
+      .then((response) => {
+        // Handle the response here
+        // Do something with the response
+        console.log("user auth response", response.data);
+        if (response.data.auth_token) {
+          handleUpdateUser(response.data);
+          console.log("user auth response", response.data);
+          setHasSubmit(true);
+        }
+      })
+      .catch((error) => {
+        console.log("user auth error", error);
+        // Handle any errors here
+        // Do something with the error
+      });
+
+    // setHasSubmit(true);
   };
 
   const displayAlert = () => {
