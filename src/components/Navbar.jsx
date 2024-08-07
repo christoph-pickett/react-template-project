@@ -83,7 +83,7 @@ export const Navbar = () => {
                 <MenuItem key={page.title} onClick={handleCloseNavMenu}>
                   <Link
                     href={page.href}
-                    sx={{ color: "inherit", textDecoration: "none" }}
+                    sx={{ color: "inherit", textDecoration: "none", pr: 2 }}
                   >
                     <Typography textAlign="center">{page.title}</Typography>
                   </Link>
@@ -118,7 +118,7 @@ export const Navbar = () => {
               <Link
                 key={page.title}
                 href={page.href}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "white", display: "block", pr: 2 }}
               >
                 {page.title}
               </Link>

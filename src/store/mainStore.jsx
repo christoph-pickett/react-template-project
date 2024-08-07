@@ -16,7 +16,7 @@ const mainReducer = (state, action) => {
 };
 
 const initialState = {
-  currentUser: { name: "Guest", email: "", auth_token: '' },
+  currentUser: { name: "Guest", email: "", auth_token: "" },
   mode: "dark",
 };
 
