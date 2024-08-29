@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "docker-build": "docker build -t react-template-api .",
-    "docker-run": "docker run -p 8000:8000 react-template-api",
+    "docker-build": "docker build -t sieghartstcloud/react-template-api .",
+    "docker-run": "docker run -p 8000:8000 sieghartstcloud/react-template-api",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
