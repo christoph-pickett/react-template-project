@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders SkeletonLoader component correctly 1`] = `
+<div>
+  <span
+    class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse css-153n0d3-MuiSkeleton-root"
+    style="width: inherit; height: 500px;"
+  />
+</div>
+`;
